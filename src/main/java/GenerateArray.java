@@ -52,6 +52,9 @@ public class GenerateArray {
         if (maxNumSize < 2) {
             maxNumSize = 2;
         }
+        if (maxNumSize > Integer.MAX_VALUE) {
+            maxNumSize = Integer.MAX_VALUE;
+        }
         return maxNumSize;
     }
 
