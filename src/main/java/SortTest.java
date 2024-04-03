@@ -54,7 +54,7 @@ public class SortTest {
         for (int i = 0; i < arrayToSort.length -1; i++) {
             min = arrayToSort[i];
             min_index = i;
-            for (int j = i; j < arrayToSort.length; j++) {
+            for (int j = i + 1; j < arrayToSort.length; j++) {
                 if (arrayToSort[j] < min) {
                     min = arrayToSort[j];
                     min_index = j;
