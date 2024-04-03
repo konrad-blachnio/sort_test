@@ -5,11 +5,12 @@ import (
 )
 
 func TestHelloName(t *testing.T) {
-
-    name := "todo"
-    name2 := "todo"
-
-    if name != name2 {
-        t.Errorf("got %q, wanted %q", name, name2)
+    array := []int{1, 2, 3, 4, 5, 6}
+    arrayToSort := []int{6, 2, 4, 5, 3, 1}
+    insertionSort(arrayToSort)
+    for i := 0; i < len(array); i++ {
+        if (array[i] != arrayToSort[i]) {
+            t.Errorf("array[%d] = %d != arrayToSort[%d] = %d", i, array[i], i, arrayToSort[i])
+        }
     }
 }
