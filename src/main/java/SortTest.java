@@ -18,7 +18,7 @@ public class SortTest {
         finish = System.currentTimeMillis();
         printLog(start, finish, "Arrays.sort of size: " + arrayToSort.length);
 
-        int[] cloneArrayToInsertionSort = Arrays.copyOf(arrayToSort, arrayToSort.length);
+        final int[] cloneArrayToInsertionSort = Arrays.copyOf(arrayToSort, arrayToSort.length);
         start = System.currentTimeMillis();
         insertionSort(cloneArrayToInsertionSort);
         finish = System.currentTimeMillis();
